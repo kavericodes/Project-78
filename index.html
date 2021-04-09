@@ -1,0 +1,30 @@
+
+    <html>
+  <head>
+    <title> Project 78 </title>
+  </head>
+<body>
+  <center>
+    <h1 style="font-size: large; font-weight: bold;"> Family Photo Album </h1>
+    <img id="pics" src="bookcover.jpg" style="width: 200px; height: 200px;">
+    <div>
+      <button type="button" onclick="move()"> Move </button>
+      </div>
+  </html>
+          <script>
+              var pics = ["kaveri.jpg", "threegirls.png", "wholefam1.jpg", "sisters.jpg", "wholefam2.jpg", "parents.jpg"
+              ];
+              var names = [ "Kaveri", "The Three Girls", "Our Whole Family", "Sisters", "Family", "Mom And Dad" ]
+              var i=0;
+  function move(){
+      if (i == 6) {
+          i=0;
+      }
+      document.getElementById("pics").src=pics [i];
+      i++;
+  }
+          </script>
+  </center>
+</body>
+</html>
+
